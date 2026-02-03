@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Sparcle - Unified intelligence for the enterprise. End context switching, reclaim focus, accelerate decisions.">
+    <title>Sparcle | Unified Intelligence for Enterprise</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/sparkle-animation.css">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+</head>
+
+<body>
+
+    <!-- ========================================
+         NAVIGATION
+         ======================================== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-logo">
+            <a href="#hero" style="display: flex; align-items: center; gap: 0.75rem;">
+                <img src="images/sparkle-icon.svg" alt="" style="width: 32px; height: 32px;">
+                <span style="font-size: 1.25rem; font-weight: 700; color: var(--text-heading);">Sparcle</span>
+            </a>
+        </div>
+
+        <ul class="nav-menu">
+            <li><a href="#problem" class="nav-link">The Crisis</a></li>
+            <li><a href="#solution" class="nav-link">Our Solution</a></li>
+            <li><a href="#products" class="nav-link">Products</a></li>
+            <li><a href="#proof" class="nav-link">Why Sparcle</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-controls">
+            <a href="#contact" class="btn btn-primary btn-sm">Let's Talk</a>
+        </div>
+    </nav>
+
+    <!-- ========================================
+         HERO - Video + Message Side-by-Side
+         ======================================== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-gradient"></div>
+
+        <div class="container">
+            <div class="hero-centered">
+                <!-- Centered Content -->
+                <div class="hero-content-centered">
+                    <h1>
+                        End App-Hopping.<br>
+                        <span class="text-gradient">Unlock Productivity.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Your workforce burns <strong>~5 weeks per year</strong> reorienting after interruptions (Gloria
+                        Mark, UC Irvine).
+                        We built AI that dramatically reduces the cognitive tax of fragmentation—unifying 30+ enterprise
+                        systems into instant, proactive intelligence.
+                    </p>
+
+                    <div class="hero-metrics">
+                        <div class="metric">
+                            <div class="metric-value">$450B</div>
+                            <div class="metric-label">Lost to fragmentation annually</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value">300+</div>
+                            <div class="metric-label">Daily app switches per employee</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value">100%</div>
+                            <div class="metric-label">Privacy protected</div>
+                        </div>
+                    </div>
+
+                    <div class="hero-ctas">
+                        <a href="#products" class="btn btn-primary btn-lg">
+                            <span>Explore Solutions</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                        <a href="https://sparcle.app/research.html" target="_blank" class="btn btn-secondary btn-lg">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                <polyline points="14 2 14 8 20 8" />
+                            </svg>
+                            Read Research
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Full-Width Video Below -->
+                <div class="hero-video-full">
+                    <div class="video-wrapper" id="heroVideoWrapper">
+                        <video id="heroVideo" autoplay loop muted playsinline>
+                            <source src="images/bolt-demo.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-controls-overlay">
+                            <button class="video-expand-btn" id="expandVideo" title="Play with audio">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3" />
+                                    <polygon points="10 8 16 12 10 16 10 8" fill="currentColor" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="video-caption">Click to watch the full demo with audio</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         THE PROBLEM - Research-Backed Crisis
+         ======================================== -->
+    <section id="problem" class="section-problem">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">The Hidden Crisis</span>
+                <h2>Modern Work Is Broken</h2>
+                <p class="section-intro">
+                    Dr. Gloria Mark's research at UC Irvine revealed a startling truth: attention spans
+                    collapsed from 2.5 minutes to <strong>47 seconds</strong> in two decades. Microsoft's
+                    Work Trend Index confirms 48% of employees describe work as "chaotic." This isn't anecdotal—it's
+                    systemic.
+                </p>
+            </div>
+
+            <div class="problem-stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="3" y="3" width="7" height="7" />
+                            <rect x="14" y="3" width="7" height="7" />
+                            <rect x="14" y="14" width="7" height="7" />
+                            <rect x="3" y="14" width="7" height="7" />
+                        </svg>
+                    </div>
+                    <div class="stat-number">473</div>
+                    <div class="stat-text">SaaS apps per enterprise</div>
+                    <div class="stat-impact">Each demanding credentials, attention, cognitive overhead</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <polyline points="12 6 12 12 16 14" />
+                        </svg>
+                    </div>
+                    <div class="stat-number">28%</div>
+                    <div class="stat-text">Of workweek on email</div>
+                    <div class="stat-impact">Only 39% spent on actual role-specific work (McKinsey)</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                        </svg>
+                    </div>
+                    <div class="stat-number">47s</div>
+                    <div class="stat-text">Average attention span</div>
+                    <div class="stat-impact">Down from 2.5 minutes—"attention residue" reduces capacity</div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <line x1="12" y1="1" x2="12" y2="23" />
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                        </svg>
+                    </div>
+                    <div class="stat-number">$450B</div>
+                    <div class="stat-text">Annual U.S. productivity loss</div>
+                    <div class="stat-impact">The true cost of workplace fragmentation (Asana Anatomy of Work)</div>
+                </div>
+            </div>
+
+            <div class="problem-conclusion">
+                <p>
+                    <strong>Existing solutions fall short.</strong> They lock you into their ecosystem.
+                    It's by design and that's their core business model. We don't believe in vendor lock-in.
+                </p>
+                <a href="https://sparcle.app/whitepaper-print.html" target="_blank" class="btn btn-secondary">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                        <polyline points="7 10 12 15 17 10" />
+                        <line x1="12" y1="15" x2="12" y2="3" />
+                    </svg>
+                    Download 31-Page Whitepaper
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         THE SOLUTION - How We Solve It
+         ======================================== -->
+    <section id="solution" class="section-solution">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Our Approach</span>
+                <h2>Unified Intelligence<br>From First Principles</h2>
+            </div>
+
+            <div class="solution-pillars">
+                <div class="pillar">
+                    <div class="pillar-number">01</div>
+                    <div class="pillar-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M12 16v-4M12 8h.01" />
+                        </svg>
+                    </div>
+                    <h3>Proactive Awareness</h3>
+                    <p>Surfaces relevant information before you ask. No more searching—intelligence comes to you based
+                        on your context.</p>
+                </div>
+
+                <div class="pillar">
+                    <div class="pillar-number">02</div>
+                    <div class="pillar-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                            <line x1="12" y1="22.08" x2="12" y2="12" />
+                        </svg>
+                    </div>
+                    <h3>Patent-Pending optimization</h3>
+                    <p>Multi-tier architecture (US 63/951,582) typically delivers sub-second responses for cached
+                        queries.
+                        10×+ cost reduction.</p>
+                </div>
+
+                <div class="pillar">
+                    <div class="pillar-number">03</div>
+                    <div class="pillar-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="12" cy="12" r="3" />
+                            <path d="M12 1v6m0 6v6m-9-9h6m6 0h6" />
+                        </svg>
+                    </div>
+                    <h3>Universal Integration</h3>
+                    <p>30+ systems via MCP protocol. Jira, Salesforce, Slack, GitHub—one interface, every tool.
+                        Patent-pending discovery (US 63/952,804).</p>
+                </div>
+
+                <div class="pillar">
+                    <div class="pillar-number">04</div>
+                    <div class="pillar-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                        </svg>
+                    </div>
+                    <h3>Enterprise-First Security</h3>
+                    <p>On-premises/VPC deployment. PII filtering. Audit trails. BYOL (Bring Your Own LLM). Your data
+                        never leaves your perimeter.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         PRODUCTS
+         ======================================== -->
+    <section id="products" class="section-products">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Our Products</span>
+                <h2>Two Products.<br>One Vision.</h2>
+                <p>Built for unified intelligence across enterprise and individual workflows.</p>
+            </div>
+
+            <div class="products-showcase">
+                <div class="product-main">
+                    <div class="product-badge">Enterprise</div>
+                    <div class="product-header">
+                        <img src="images/bolt-logo.svg" alt="Bolt" class="product-logo-img">
+                        <div>
+                            <h3>Bolt</h3>
+                            <p class="product-subtitle">The Enterprise AI Operating System</p>
+                        </div>
+                    </div>
+
+                    <p class="product-intro">
+                        Bolt sits above your entire tech stack, eliminating the "context switching tax."
+                        Ask questions in natural language—get instant answers synthesized from 26+ systems.
+                        No app-hopping. No credential juggling. Just intelligence.
+                    </p>
+
+                    <div class="product-features-list">
+                        <div class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            <span><strong>30+ integrations</strong> via MCP protocol (Jira, Salesforce, Slack,
+                                etc.)</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            <span><strong>~80% cache hit rate</strong> – intelligent multi-tier caching reduces costs
+                                10×+</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            <span><strong>On-prem/VPC deployment</strong> – your data stays in your perimeter</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            <span><strong>BYOL</strong> – use OpenAI, Anthropic, Google, or local models</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
+                            <span><strong>$5M+ ROI</strong> for 1,000 employees (estimated)</span>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="btn btn-primary btn-lg">Schedule Enterprise Demo</a>
+                </div>
+
+                <div class="product-secondary">
+                    <div class="product-badge">macOS</div>
+                    <div class="product-header">
+                        <div class="sparcle-app-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3>Sparcle.app</h3>
+                            <p class="product-subtitle">AI for Mac Power Users</p>
+                        </div>
+                    </div>
+
+                    <p class="product-intro">
+                        Lightweight desktop app bringing AI assistance to your fingertips. Global hotkey access, context
+                        awareness, integrated terminal—transform your Mac into an intelligent workspace.
+                    </p>
+
+                    <div class="product-features-compact">
+                        <div class="compact-feature">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                            </svg>
+                            Instant access anywhere
+                        </div>
+                        <div class="compact-feature">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                            </svg>
+                            Context-aware assistant
+                        </div>
+                        <div class="compact-feature">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                            </svg>
+                            Autonomous workflows
+                        </div>
+                        <div class="compact-feature">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                            </svg>
+                            Free during alpha
+                        </div>
+                    </div>
+
+                    <a href="https://sparcle.app/download.html" target="_blank" class="btn btn-secondary">Download for
+                        Mac</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proof" class="section-proof">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Built & Deployed</span>
+                <h2>Real Product. <br> Real Metrics.</h2>
+            </div>
+
+            <div class="proof-grid">
+                <div class="proof-card">
+                    <div class="proof-metric">6</div>
+                    <div class="proof-label">Active Security Layers</div>
+                    <p>Pre-LLM guardrails, output filtering, PII masking, GDPR logging, rate limiting, request
+                        tracking—defense in depth.</p>
+                </div>
+
+                <div class="proof-card">
+                    <div class="proof-metric">18</div>
+                    <div class="proof-label">Policy Categories</div>
+                    <p>Automated blocking across 18 policy categories, 14 PII pattern types detected and protected.</p>
+                </div>
+
+                <div class="proof-card">
+                    <div class="proof-metric">30+</div>
+                    <div class="proof-label">Enterprise Integrations</div>
+                    <p>Email, Calendar, Tasks, Contacts, Files, Confluence, GitLab, Jira, ServiceNow—one interface for
+                        everything.</p>
+                </div>
+
+                <div class="proof-card">
+                    <div class="proof-metric">3</div>
+                    <div class="proof-label">Patents Pending</div>
+                    <p>Multi-tier caching (US 63/951,582), dynamic MCP discovery (63/952,804), adaptive UI (63/952,801).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         CTA
+         ======================================== -->
+    <section id="contact" class="section-cta">
+        <div class="container">
+            <div class="cta-box">
+                <h2>Let's Have a Conversation</h2>
+                <p>
+                    We partner with forward-thinking enterprises solving real productivity crises.
+                    If you're ready to measure the true cost of fragmentation—and eliminate it—let's talk.
+                </p>
+
+                <div class="cta-actions">
+                    <a href="mailto:team@sparcle.app?subject=Enterprise%20Pilot%20Inquiry"
+                        class="btn btn-primary btn-xl">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
+                        </svg>
+                        <span>team@sparcle.app</span>
+                    </a>
+                </div>
+
+                <div class="cta-resources">
+                    <a href="https://sparcle.app/media/Bolt_Strategic_Vision.pdf" target="_blank">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                            <polyline points="14 2 14 8 20 8" />
+                        </svg>
+                        Strategic Vision
+                    </a>
+                    <span>•</span>
+                    <a href="https://sparcle.app/whitepaper-print.html" target="_blank">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                            <polyline points="14 2 14 8 20 8" />
+                        </svg>
+                        Whitepaper
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FOOTER
+         ======================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+                        <img src="images/sparkle-icon.svg" alt="" style="height: 32px;">
+                        <span style="font-size: 1.25rem; font-weight: 700;">Sparcle</span>
+                    </div>
+                    <p>Building unified intelligence for the modern enterprise.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h5>Products</h5>
+                    <ul>
+                        <li><a href="#products">Bolt Enterprise</a></li>
+                        <li><a href="https://sparcle.app/" target="_blank">Sparcle.app</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h5>Resources</h5>
+                    <ul>
+                        <li><a href="https://sparcle.app/research.html" target="_blank">Research</a></li>
+                        <li><a href="https://sparcle.app/whitepaper-print.html" target="_blank">Whitepaper</a></li>
+                        <li><a href="https://sparcle.app/media/Bolt_Strategic_Vision.pdf" target="_blank">Strategic
+                                Vision</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a href="mailto:team@sparcle.app">Contact</a></li>
+                        <li><a href="#problem">Research</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-sources"
+                style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); text-align: center; color: var(--text-muted); line-height: 1.6;">
+                <p><strong>Sources:</strong> Productivity loss figures from Asana Anatomy of Work Report. Attention span
+                    research by Dr. Gloria Mark, UC Irvine. ROI estimates based on industry averages and conservative
+                    projections.</p>
+            </div>
+
+            <div class="footer-bottom">
+                <span>© 2026 Sparcle, LLC. All rights reserved.</span>
+                <span class="footer-legal">Patents Pending: US 63/951,662 • 63/952,801 • 63/952,804</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Video Modal -->
+    <div class="video-modal" id="videoModal">
+        <div class="video-modal-backdrop" id="modalBackdrop"></div>
+        <div class="video-modal-content">
+            <button class="video-modal-close" id="modalClose">&times;</button>
+            <video id="modalVideo" controls>
+                <source src="images/bolt-demo.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/video-enhanced.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+
+</html>
