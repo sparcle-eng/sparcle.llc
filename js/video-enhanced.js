@@ -13,8 +13,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (!heroVideoWrapper || !videoModal) return;
 
+    let modalOpen = false;
+
     // Click to expand and play with audio
     const openModal = () => {
+        if (modalOpen) return;
+        modalOpen = true;
         videoModal.classList.add('active');
         document.body.style.overflow = 'hidden';
 
@@ -31,6 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const closeModal = () => {
+        modalOpen = false;
         videoModal.classList.remove('active');
         document.body.style.overflow = '';
 
@@ -44,12 +49,14 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
-    // Event listeners
-    heroVideoWrapper?.addEventListener('click', openModal);
+    // Only the expand/unmute button opens the modal — not a bare click on the wrapper
     expandBtn?.addEventListener('click', (e) => {
         e.stopPropagation();
         openModal();
     });
+
+    // Clicking the video itself (outside the button) also opens the modal
+    heroVideoWrapper?.addEventListener('click', openModal);
 
     modalClose?.addEventListener('click', closeModal);
     modalBackdrop?.addEventListener('click', closeModal);
